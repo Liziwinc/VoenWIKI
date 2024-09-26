@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOENWIKI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>VOENWIKI</h1>
+    <a>
+    <button onclick="openPopup()">Добавить заметку</button>
+   </a>
+    </header>
+       
+
+<div class="main">
+    
+
+    <div>
+        <h1 style="margin-left: 45px;">Энциклопедия</h1><br>
+        <input
+          type="text"
+          class="input-style"
+          placeholder="Имя пользователя"
+          id="filter"
+          style="margin-left: 60px;"
+        />
+        <ul class="dbl-border" id="list"></ul>
+      </div>
+      </div>
+      
+    
+        <div class="form-container1">
+            <button onclick="closePopup()">Закрыть</button> <br><br>
+            <form class="form1" action="https://formspree.io/f/xrbzgvpj"  method="POST">
+              <div class="form-group1">
+                <label> Имя:
+                <input name="name"></label>
+              </div>
+              <div class="form-group1">
+                <label>Обозначение:
+                <textarea name="message"  rows="10" cols="50">          </textarea></label>
+              </div>
+              
+              <button  type="submit">Submit</button>
+            </form>
+          </div>
+      
+      
+<footer>
+    <p>VOENWIKI -  это научно-техническая энциклопедия, созданная студентом группы О724Б09 Кокоревым Михаил Николаевичем.</p>
+</footer>
+</body>
+</html>
